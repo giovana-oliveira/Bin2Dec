@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+.container {
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  height: 400px;
+  padding: 10px 25px;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+h1, input, output {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px auto;
+  font-size: 40px;
+}
+
+input, #toDecimalBtn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+input {
+  background-color: rgb(231, 231, 241);
+}
+
+#toDecimalBtn {
+  color: #fff;
+  background: rgb(105, 80, 216);
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+#toDecimalBtn:hover {
+  background: rgb(93, 70, 192);
+}
+
+@media only screen and (min-width:280px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .container {
+    width: 30%;
+  }
+}
+
+output {
+  font-size: 40px;
+}
